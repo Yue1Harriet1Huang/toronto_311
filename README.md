@@ -1,12 +1,12 @@
-# Data Pipeline for NYC 311 data
+# Data Pipeline for Toronto 311 data
 
 ## Goal
 
-Create an automated ETL pipeline to prepare data for analysis of noise complaints and other 311 service requests in NYC.
+Create an automated ETL pipeline to prepare data for analysis of noise complaints and other 311 service requests in Toronto.
 
 ### Problem
 
-The City of New York is responsible for the governance of millions of people. They offer a variety of different municipal services that must be managed to take care of streets, buildings, and the people. In order to better understand what services their constituents are using throughout the year, they want to explore the 311 service requests they have received. They are especially interested in how they can accommodate their diverse boroughs (Brooklyn, Bronx, Queens, Manhattan, Staten Island). In addition, they want to explore how weather conditions and seasonal differences affect the type of services received (ex. if it's cold there could be an increase in 311 service requests for no heating in building).
+The City of Toronto is responsible for the governance of millions of people. They offer a variety of different municipal services that must be managed to take care of streets, buildings, and the people. In order to better understand what services their constituents are using throughout the year, they want to explore the 311 service requests they have received. They are especially interested in how they can accommodate their diverse boroughs (Brooklyn, Bronx, Queens, Manhattan, Staten Island). In addition, they want to explore how weather conditions and seasonal differences affect the type of services received (ex. if it's cold there could be an increase in 311 service requests for no heating in building).
 
 ### Solution: Technologies
 
@@ -34,7 +34,7 @@ In order to effectively gain insight into Noise Complaints and other non-emergen
 The proposed plan consists of Python ETL pipelines with the following stages:
 
 - Stage 1a: Extract NYC 311 service request data
-  - Query NYC Open Data 311 API Endpoint daily
+  - Query Toronto Open Data 311 API Endpoint daily
   - Save JSON data to S3
 
 ![Alt text](dag_get_nyc_311_data.png?raw=true "DAG Get NYC 311 data")
